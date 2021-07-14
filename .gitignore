@@ -1,0 +1,2 @@
+# Avoid committing generated Java class files
+*.class
