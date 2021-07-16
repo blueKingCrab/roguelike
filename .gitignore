@@ -1,2 +1,5 @@
 # Avoid committing generated Java class files
 *.class
+.classpath
+.project
+test.txt
