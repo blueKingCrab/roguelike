@@ -34,7 +34,7 @@ public class Roguelike extends JFrame {
    public static void main(String[] args) {
    
       Map m = new Map();
-      //System.out.println(m.toString());
+      System.out.println(m.toString());
       
       try{
          FileWriter f = new FileWriter("test.txt");
