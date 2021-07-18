@@ -1,3 +1,4 @@
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Font;
 import javax.swing.JFrame;
@@ -19,14 +20,13 @@ public class Roguelike extends JFrame {
 
    private void initUI(Map m) {
 
-      add(new Window());
-
-      setSize(250, 200);
-
+	  getContentPane().add(new Window(), BorderLayout.CENTER);
+      setSize(500, 500);
       setTitle("Roguelike");
       JLabel map =  new JLabel(m.toString());
       this.add(map);
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setResizable(false);
       setLocationRelativeTo(null);
       //this.pack();   
    }    
